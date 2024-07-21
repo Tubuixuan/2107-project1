@@ -20,3 +20,240 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
+
+/* ============== HEADER ============== */
+.header {
+  /* Xoay ngang tất cả các phần tử */
+  display: flex;
+  /* Cài đặt độ rộng cho cả khung phẩn từ */
+  width: 1170px;
+  /* Để cho phần tử không bị mất khi co kéo độ rộng của trình duyệt */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - 48px);
+  margin-top: 20px;
+  align-items: center;
+  /* Ghim phần tử ở trên trang lại */
+  position: sticky;
+  top: 8px;
+  background-color: var(--mau-background-vang);
+  z-index: 1;
+}
+
+.header a {
+  /* Bỏ dấu gạch chân ở dưới thẻ a */
+  text-decoration: none;
+}
+
+.header__navigation a {
+  /* Đổi màu chữ */
+  color: #5f5b53;
+  /* Tạo Padding cho các phần tử để tăng độ tương tác phần tử */
+  padding: 15px;
+}
+
+.header__navigation {
+  /* Đẩy tất cả phần tử sang bên phải */
+  margin-left: auto;
+  /* Giãn khoảng cách giữa Navigation với nút bấm */
+  margin-right: 70px;
+  position: relative;
+}
+
+.header__navigation a:hover {
+  /* Tạo hiệu ứng đổ bóng chữ di chuột vào */
+  text-shadow: 1px 0 0 black;
+}
+
+/* Code nút bấm */
+.header__signup {
+  display: inline-block;
+  background: #171100;
+  width: 144px;
+  height: 50px;
+  border-radius: 24.5px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__signup a {
+  color: #ffffff;
+}
+
+/* Code dấu gạch chân ở dưới nút Home */
+.header__navigation--active::after {
+  display: inline-block;
+  content: "";
+  background-color: #171100;
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  position: absolute;
+  left: 16px;
+  bottom: -5px;
+}
+
+/* ============== MAIN ============== */
+.main {
+  /* Xoay ngang phần tử */
+  display: flex;
+  /* Căn độ rộng toàn phần */
+  width: 1170px;
+  background-color: var(--mau-background-vang);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  max-width: calc(100% - 48px);
+}
+
+.main__left {
+  position: relative;
+}
+
+.main__left--icon {
+  position: absolute;
+  right: -50px;
+  top: 350px;
+}
+
+.main__left--icon-mot,
+.main__left--icon-hai,
+.main__left--icon-ba {
+  display: flex;
+  margin: 30px;
+}
+
+.main__left--icon-mot-a,
+.main__left--icon-hai-a,
+.main__left--icon-ba-a {
+  margin-right: 15px;
+}
+
+.main__left--icon {
+  background-color: #ffffff;
+  height: 270px;
+  border-radius: 10px;
+}
+
+.main__left--icon-mot-b p:first-child,
+.main__left--icon-hai-b p:first-child,
+.main__left--icon-ba-b p:first-child {
+  padding-bottom: 10px;
+  color: #5f5b53;
+}
+
+.main__left--icon-mot-b p:last-child,
+.main__left--icon-hai-b p:last-child,
+.main__left--icon-ba-b p:last-child {
+  color: #171100;
+  font-weight: 600;
+}
+
+.main__left--icon-mot-a,
+.main__left--icon-hai-a,
+.main__left--icon-ba-a {
+  background-color: #fff9e8;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  /* display: inline-block;  */
+  display: flex;
+}
+
+.main__left--icon-hai-a {
+  background-color: #fcefff;
+}
+
+.main__left--icon-ba-a {
+  background-color: #ebeaff;
+}
+
+.main__right {
+  margin-left: 150px;
+}
+
+.main__right h1 {
+  margin-top: 5rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 5.8rem;
+  line-height: 68px;
+}
+
+.main__right p {
+  font-family: var(--font-content);
+  color: #5f5b53;
+  margin: 20px 0;
+  line-height: 30px;
+}
+
+/* Code phần nút bấm */
+.main__right--button-left {
+  background-color: var(--mau-vang-chinh);
+  width: 180px;
+  height: 64px;
+  border-radius: 32px;
+  margin-right: 50px;
+}
+
+.main__right--button-left a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+}
+
+.main__right--button {
+  display: flex;
+}
+
+.main__right--button-right {
+  display: flex;
+  align-items: center;
+}
+
+.main__right--button-right-a {
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.main__right--button-right-a img {
+  width: 12px;
+  height: 12px;
+  margin-left: 20px;
+  margin-top: 18px;
+  /* background-color: blue; */
+}
+
+.main__right--button-right-b p {
+  font-weight: 600;
+  line-height: 30px;
+  font-size: 1.8rem;
+  color: #171100;
+  font-family: var(--font-heading);
+}
+
+strong {
+  font-weight: 700;
+  font-size: 4.4rem;
+  color: #171100;
+}
+
+.main__right--button-right-text {
+  display: flex;
+}
+
+.main__right--button-right-text P:first-child {
+  margin-right: 50px;
+}
