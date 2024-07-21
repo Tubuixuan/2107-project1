@@ -1,0 +1,22 @@
+/* Tạo base dự án ban đầu */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Tạo biến lưu trữ giá trị thường dùng */
+:root {
+  --mau-vang-chinh: #ffb900;
+  --mau-den-tieude: #171100;
+  --mau-background-vang: #fffcf4;
+  --font-content: "Poppins", sans-serif;
+  --font-heading: "Sen", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
